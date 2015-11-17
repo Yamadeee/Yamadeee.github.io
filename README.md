@@ -1,24 +1,54 @@
-White Paper
-============
+# Jekyll Metro
 
-White Paper is a jekyll theme for tech blogs. It is clean and simple with good semantic
-structure.
+Jekyll Metro is a metro inspired theme for [Jekyll](http://jekyllrb.com).
 
-![white-paper image](https://i.cloudup.com/rmZjQ83vRh-2000x2000.png)
+## Summary
 
-## Usage:
+Jekyll Metro is a theme built on top of bootstrap and other freely available libraries. Its aimed to provide a fully furnished Jekyll theme for personal sites with blog. 
 
-- Install Jekyll from here(http://jekyllrb.com/)
-- Fork the project.
-- Change the fields in _config.yml
-- Change the links in header.html.s
+## Version 1.0 Development (Beta 2 Released!)
 
-Test the website live while editing the code:
+New features include:
+- Light box feature
+- Social media share widget
+- New colors
 
-```sh
-jekyll server --watch
-```
+Currently I am busy with other project and will devote less time in developing this theme forward. Updates and enhancements are welcome.
 
-## Issues:
 
-Report issues or feature request [here](https://github.com/vinitkumar/white-paper/issues).
+## Features
+
+- Responsive Jekyll theme
+- Metro style Homepage
+  - Configurable tiles with different size
+  - Configurable colors for tiles
+  - Display of Latest and Recent articles as tiles
+- Pages for About Me, Resume with configurable color themes
+- Blog home page with listing of articles in pagination
+- Blog article page with configurable color themes
+- Easy integration with Google Analytics
+- Easy integration with Disqus for comments
+
+## Demo
+
+You can see the live demo of this theme at [http://blog-olakara.rhcloud.com](http://blog-olakara.rhcloud.com)
+
+## Author
+
+**[Abdel Raoof Olakara](http://abdelraoof.com)**
+
+
+## Contributors
+
+**Stilyan Kongalov**
+- <https://github.com/Stilyan-Kangalov>
+
+**Peter Zhu**
+- <https://github.com/ZhuFengdaaa>
+
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3

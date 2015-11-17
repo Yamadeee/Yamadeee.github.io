@@ -1,33 +1,67 @@
-name: White Paper
-markdown: redcarpet
-pygments: true
-url: http://vinitkumar.me/white-paper
-paginate: 8
-description:     Jekyll theme for Programmers
-intro: White Paper is a Jekyll theme most suited to be used on tech blogs that like their content to shine.
-logo:             logo.png
-disqus_shortname:
-# url: http://gotchacode.com
-#Comment out url when working locally to resolve base urls correctly
-#url:
+# Configurations
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: pygments
 
-# Owner/author information
-owner:
-  name:           <your-name-here>
-  avatar:         <avatar-image-link>
-  email:          <your-email-address>
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  github:
-  stackexchange:
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+# Needed for backward compatibility
+gems: [jekyll-paginate]
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+# Permalinks
+permalink:        /blog/:year/:month/:day/:title
 
-# Links to include in top navigation
-# For external links add external: true
+# Setup
+title:            'Jekyll Metro'
+tagline:          'A Metro theme for Jekyll'
+description:      'A Sample blog using Jekyll Metro'
+url:              'http://192.168.1.11:4000'
+baseurl:          ''
+
+# Navigation
+navigation:
+- text: About
+  url: /about/
+- text: Resume
+  url: /resume/
+- text: Blog
+  url: /blog/
+- text: Tags
+  url: /tags/
+- text: Archive
+  url : /archive/
+- text: Search
+  url: /search/
+
+
+# Author Details
+author:         'Abdel Raoof Olakara'
+
+#Social Media links (Use complete URL except for email)
+dribbble:
+email:
+facebook:       'https://www.facebook.com/olakara'
+flickr:
+github:         'https://github.com/olakara'
+gplus:          'https://plus.google.com/100425464897246255887/'
+instagram:
+pinterest:
+linkedin:       'https://ae.linkedin.com/in/olakara/'
+rss:
+stackoverflow:  'http://stackoverflow.com/users/185655/abdel-raoof'
+twitter:        'https://twitter.com/olakara'
+
+# Google Analytics
+gahandler: 'UA-52149651-1'
+
+#if footersvg is 'true' the social media links will be shown top on the copy right in the footer
+footersvg: 'true'
+
+# Disqus
+disqushandler: 'testingblogo'
+
+# Blog Configurations
+paginate: 10 # Posts per page on the blog index
+paginate_path: '/blog/page:num'
+destination: ./_site
+
+# Custom vars
+version:          0.9x beta 2
