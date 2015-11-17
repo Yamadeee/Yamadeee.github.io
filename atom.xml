@@ -9,7 +9,7 @@
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://tom.preston-werner.com/</id>
  <author>
-   <name>Tom Preston-Werner</name>
+   <name>七碘一氪</name>
    <email>tom@mojombo.com</email>
  </author>
 
