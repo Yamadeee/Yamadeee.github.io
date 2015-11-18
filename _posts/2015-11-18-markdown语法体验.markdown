@@ -14,18 +14,18 @@ tags: Design Markdown
 > *在研究一下
 ![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
 
-##什么是markdown
+#什么是markdown
 markdown是一个纯文本的标记语言，就像HTML，但是它比HTML方便多了，比如**粗体**，*斜体*。还有
 ###列表
 - [] 无聊和蛋疼的区别
 - [] 然并卵读起来好顺口
 - [] 问世间情为何物
-- [*] 直教人生死相许
+- [] 直教人生死相许
 ###一个能量守恒方程
 $$E=MC^2$$
 ###高亮一段代码
 
-``` javascript
+```javascript
 /**
 * nth element in the fibonacci series.
 * @param n >= 0
