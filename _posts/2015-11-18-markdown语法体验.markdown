@@ -9,52 +9,6 @@ tags: Design Markdown
 写这篇博客的目的无非是想熟悉一下markdown的语法，对以后写一些内容有所帮助。
 以前在所谓的富文本编辑框中写博客的日子貌似要远离了。
 ^^!
-> *中文输入和英文输入切换真DT
-> *如何换行
-> *在研究一下
-![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
-
-#什么是markdown
-markdown是一个纯文本的标记语言，就像HTML，但是它比HTML方便多了，比如**粗体**，*斜体*。还有
-###列表
-- [] 无聊和蛋疼的区别
-- [] 然并卵读起来好顺口
-- [] 问世间情为何物
-- [] 直教人生死相许
-###一个能量守恒方程
-$$E=MC^2$$
-###高亮一段代码
-
-```javascript
-/**
-* nth element in the fibonacci series.
-* @param n >= 0
-* @return the nth element, >= 0.
-*/
-function fib(n) {
-  var a = 1, b = 1;
-  var tmp;
-  while (--n >= 0) {
-    tmp = a;
-    a += b;
-    b = tmp;
-  }
-  return a;
-}
-
-document.write(fib(10));
-```
-###高效绘图
-```seq
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
-```
-###绘制表格
-|人物|故事|世间|
-|----|----|----|
-|张无忌|大战光明顶|不知道|
-|乔峰|勇闯聚贤庄|whatever|
 # 欢迎使用 Cmd Markdown 编辑阅读器
 
 ------
