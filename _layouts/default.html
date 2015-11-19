@@ -34,7 +34,7 @@
 	  <h2>类别</h2>
 	  {% for category in site.categories %}
 	  <p>
-		  <span>{{ category | first }}</span>
+		  <span><a href="/category/category.html">{{ category | first }}</a></span>
 		  <span>{{ category | last | size }}</span>
 	  </p>
 	  {% endfor %}
