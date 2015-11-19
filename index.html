@@ -14,7 +14,7 @@ title: yamadeee
   {% if paginator.previous_page %}
     <p class="previous">
       {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
+        <a href="/"><<</a>
       {% else %}
         <a href="{{ paginator.previous_page_path }}"><<</a>
       {% endif %}
@@ -25,8 +25,8 @@ title: yamadeee
     </p>
   {% endif %}
 
-  <ul class="pages">
-    <li class="page">
+  <ul class="pages" >
+    <li class="page"style="float:left">
       {% if paginator.page == 1 %}
         <span class="current-page">1</span>
       {% else %}
@@ -35,7 +35,7 @@ title: yamadeee
     </li>
 
     {% for count in (2..paginator.total_pages) %}
-      <li class="page">
+      <li class="page" style=="float:left">
         {% if count == paginator.page %}
           <span class="current-page">{{ count }}</span>
         {% else %}
