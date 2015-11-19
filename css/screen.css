@@ -62,9 +62,10 @@ table {
 	font-family:consoles,微软雅黑;
 	position:absolute;
 	margin-left:-10em;
-	top:6em;
 }	
-
+.sile i{
+	font-family:consoles,微软雅黑;
+}
 /*****************************************************************************/
 /*
 /* Home
