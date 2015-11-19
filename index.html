@@ -12,7 +12,7 @@ title: yamadeee
   </ul>
   <div id="post-pagination" class="pagination">
   {% if paginator.previous_page %}
-    <p class="previous">
+    <p class="previous" style="margin:0px">
       {% if paginator.previous_page == 1 %}
         <a href="/"><<</a>
       {% else %}
@@ -20,13 +20,13 @@ title: yamadeee
       {% endif %}
     </p>
   {% else %}
-    <p class="previous disabled">
+    <p class="previous disabled" style="margin:0px">
       <span><<</span>
     </p>
   {% endif %}
 
-  <ul class="pages" >
-    <li class="page"style="float:left">
+  <ul class="pages" style="list-style:none" >
+    <li class="page" style="float:left">
       {% if paginator.page == 1 %}
         <span class="current-page">1</span>
       {% else %}
@@ -35,7 +35,7 @@ title: yamadeee
     </li>
 
     {% for count in (2..paginator.total_pages) %}
-      <li class="page" style=="float:left">
+      <li class="page" style="float:left">
         {% if count == paginator.page %}
           <span class="current-page">{{ count }}</span>
         {% else %}
@@ -46,11 +46,11 @@ title: yamadeee
   </ul>
 
   {% if paginator.next_page %}
-    <p class="next">
+    <p class="next" style="margin:0px">
       <a href="{{ paginator.next_page_path }}">>></a>
     </p>
   {% else %}
-    <p class="next disabled">
+    <p class="next disabled" style="margin:0px">
       <span>>></span>
     </p>
   {% endif %}
