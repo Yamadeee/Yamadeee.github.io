@@ -12,7 +12,7 @@ tags: Design Markdown
 > *中文输入和英文输入切换真DT
 > *如何换行
 > *在研究一下
-![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
+>![cmd-markdown-logo](https://www.zybuluo.com/static/img/logo.png)
 
 #什么是markdown
 markdown是一个纯文本的标记语言，就像HTML，但是它比HTML方便多了，比如**粗体**，*斜体*。还有
@@ -21,5 +21,5 @@ markdown是一个纯文本的标记语言，就像HTML，但是它比HTML方便�
 - [] 然并卵读起来好顺口
 - [] 问世间情为何物
 - [] 直教人生死相许
-**写了半天，貌似有好多语法都不支持，所以又删了，浪费感情**
+>**写了半天，貌似有好多语法都不支持，所以又删了，浪费感情**
 
