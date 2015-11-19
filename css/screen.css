@@ -61,7 +61,7 @@ table {
 .side{
 	font-family:consoles,微软雅黑;
 	position:absolute;
-	margin-left:-10em;
+	left:10em;
 }	
 .sile a{
 	font-family:consoles,微软雅黑;
@@ -73,7 +73,7 @@ table {
 /*****************************************************************************/
 .category{
 	position:absolute;
-	right:0em;
+	right:10em;
 	top:3em;
 }
 /*****************************************************************************/

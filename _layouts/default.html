@@ -33,8 +33,8 @@
 	  <div class="category">
 	  <p>类别</p>
 	  {% for category in site.categories %}
-	  <h2>{{ category | first }}</h2>
-	  </span>{{ category | last | size }}</span>
+	  <span>{{ category | first }}</span>
+	  <span>{{ category | last | size }}</span>
 	  {% endfor %}
 	  </div>
       <div class="footer">
