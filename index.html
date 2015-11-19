@@ -10,19 +10,52 @@ title: yamadeee
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  <div class="pagination">
-	  {% if paginator.previous_page %}
-		<a href="/page{{ paginator.previous_page }}" class="previous">上一页</a>
-	  {% else %}
-		<span class="previous">上一页</span>
-	  {% endif %}
-	  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	  {% if paginator.next_page %}
-		<a href="/page{{ paginator.next_page }}" class="next">下一页</a>
-	  {% else %}
-		<span class="next ">下一页</span>
-	  {% endif %}
-  </div>
+  <div id="post-pagination" class="pagination">
+  {% if paginator.previous_page %}
+    <p class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}"><<</a>
+      {% endif %}
+    </p>
+  {% else %}
+    <p class="previous disabled">
+      <span><<</span>
+    </p>
+  {% endif %}
+
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+      <li class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.next_page %}
+    <p class="next">
+      <a href="{{ paginator.next_page_path }}">>></a>
+    </p>
+  {% else %}
+    <p class="next disabled">
+      <span>>></span>
+    </p>
+  {% endif %}
+
+</div>
   <h1>生活</h1>
   <ul class="posts">
     <li><span>02 Sep 2013</span> &raquo; <a href="http://www.wired.com/wiredenterprise/2013/09/github-for-anything/all/">Article: WIRED - GitHub Is Going Mainstream</a></li>
