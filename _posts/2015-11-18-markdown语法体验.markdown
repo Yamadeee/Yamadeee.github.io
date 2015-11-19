@@ -2,7 +2,7 @@
 layout: post
 title:  体验markdown语法
 date:   2015-11-19 01:28:58
-categories: design markdown
+categories: markdown
 tags: Design Markdown
 ---
 

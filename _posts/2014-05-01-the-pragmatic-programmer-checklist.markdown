@@ -3,7 +3,7 @@ layout: post
 title: "The Pragmatic Programmer Checklist"
 date: 2014-05-01 14:05:26 +0530
 comments: true
-categories:
+categories: checklist
 ---
 
 Last year, I read a great book on Programming and development (The Pragmatic Programmer).

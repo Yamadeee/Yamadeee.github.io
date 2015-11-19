@@ -2,3 +2,4 @@ markdown: rdiscount
 highlighter: pygments
 paginate: 15
 paginate_path: "page:num"
+permalink: /:year/:month/:day/:title
