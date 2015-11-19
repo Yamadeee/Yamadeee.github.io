@@ -12,16 +12,16 @@ title: yamadeee
   </ul>
   <div id="post-pagination" class="pagination">
   {% if paginator.previous_page %}
-    <p class="previous" style="margin:0px">
+    <p class="previous" style="margin:0px;float:left">
       {% if paginator.previous_page == 1 %}
-        <a href="/"><<</a>
+         <a href="/">上一页</a>&nbsp;
       {% else %}
-        <a href="{{ paginator.previous_page_path }}">上一页</a>
+        <a href="{{ paginator.previous_page_path }}">上一页</a>&nbsp;
       {% endif %}
     </p>
   {% else %}
     <p class="previous disabled" style="margin:0px">
-      <span>上一页</span>
+      <span>上一页</span> &nbsp;
     </p>
   {% endif %}
 
@@ -47,11 +47,11 @@ title: yamadeee
 
   {% if paginator.next_page %}
     <p class="next" style="margin:0px">
-      <a href="{{ paginator.next_page_path }}">下一页</a>
+      &nbsp;<a href="{{ paginator.next_page_path }}">下一页</a>
     </p>
   {% else %}
     <p class="next disabled" style="margin:0px">
-      <span>下一页</span>
+      &nbsp;<span>下一页</span>
     </p>
   {% endif %}
 
