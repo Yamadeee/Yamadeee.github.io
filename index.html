@@ -28,18 +28,18 @@ title: yamadeee
   <ul class="pages" style="list-style:none" style="float:left" >
     <li class="page" style="float:left">
       {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
+        <span class="current-page">1</span>&nbsp;
       {% else %}
-        <a href="/">1</a>
+        <a href="/">1</a>&nbsp;
       {% endif %}
     </li>
 
     {% for count in (2..paginator.total_pages) %}
       <li class="page" style="float:left">
         {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
+          <span class="current-page">{{ count }}</span>&nbsp;
         {% else %}
-          <a href="/page{{ count }}">{{ count }}</a>
+          <a href="/page{{ count }}">{{ count }}</a>&nbsp;
         {% endif %}
       </li>
     {% endfor %}
