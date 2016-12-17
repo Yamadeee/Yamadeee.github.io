@@ -20,7 +20,7 @@ body {
   background-color: white;
   font: 13.34px consoles,微软雅黑,helvetica, arial, clean, sans-serif;
   *font-size: small;
-  text-align: center;
+ /* text-align: center;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
