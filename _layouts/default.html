@@ -1,41 +1,73 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-  <head>
+<html>
+
+<head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     <meta name="author" content="Tom Preston-Werner" />
-    <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
-	<link rel="icon" type="image/png" href="/images/favicon.ico"/>
-	<link rel="stylesheet" href="/css/font-awesome.css" type="text/css" />
+    <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM" />
+    <link rel="icon" type="image/png" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/font-awesome.css" type="text/css" />
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
     <!-- Homepage CSS -->
     <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
     <!-- Typekit -->
-    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-  <body>
+    <script type="text/javascript" src="/js/jquery.1.8.3-min.js"></script>
+    <script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+    <!-- <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script> -->
+    <script type="text/javascript">
+    try {
+        Typekit.load();
+    } catch (e) {}
+    </script>
+    <script type="text/javascript">
+    $(function() {
+        $('.site').fullpage({
+            sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+            'navigation': true,
+        });
+    });
+    </script>
+</head>
+
+<body>
     <!-- ClickTale Top part -->
     <script type="text/javascript">
-    var WRInitTime=(new Date()).getTime();
+    var WRInitTime = (new Date()).getTime();
     </script>
     <!-- ClickTale end of Top part -->
     <div class="site">
-	  <div class="side">
-		<span></span>
-	  </div>
-      {{ content }}
-	  <div class="category">
-	  <h2>类别</h2>
-	  {% for category in site.categories %}
-	  <p>
-		  <span><a href="/category/category.html">{{ category | first }}</a></span>
-		  <span>{{ category | last | size }}</span>
-	  </p>
-	  {% endfor %}
-	  </div>
-      <div class="footer">
+        <!-- <div class="side">
+        <span></span>
+      </div> -->
+        <div class="section">
+            <h3>第一屏</h3>
+            <p>fullPage.js — 项目导航演示</p>
+        </div>
+        <div class="section">
+            <h3>第二屏</h3>
+            <p>请查看右边的圆圈</p>
+        </div>
+        <div class="section">
+            <h3>第三屏</h3>
+            <p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+        </div>
+        <div class="section">
+            <h3>第四屏</h3>
+            <p>这是最后一屏</p>
+        </div>
+        {{ content }}
+        <!-- <div class="category">
+      <h2>类别</h2>
+      {% for category in site.categories %}
+      <p>
+          <span><a href="/category/category.html">{{ category | first }}</a></span>
+          <span>{{ category | last | size }}</span>
+      </p>
+      {% endfor %}
+      </div> -->
+        <!-- <div class="footer">
         <div class="contact">
           <p>
             github
@@ -50,17 +82,17 @@
             <a href="weibo.com/">微博</a><br />
           </p>
         </div>
-      </div>
+      </div> -->
     </div>
     <a href="http://github.com/yamadeee"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
     <!-- ClickTale Bottom part -->
     <div id="ClickTaleDiv" style="display: none;"></div>
     <script type="text/javascript">
-    if(document.location.protocol!='https:')
-    document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
+    if (document.location.protocol != 'https:')
+        document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
     </script>
     <script type="text/javascript">
-    if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
+    if (typeof ClickTale == 'function') ClickTale(206, 0.3, "www03");
     </script>
     <!-- ClickTale end of Bottom part -->
     <!-- Google Analytics -->
@@ -73,5 +105,6 @@
     pageTracker._trackPageview();
     </script>
     <!-- Google Analytics end -->
-  </body>
+</body>
+
 </html>
